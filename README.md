@@ -1,4 +1,4 @@
-JBL Website Design Using HTML CSS & JavaScript.(Contains the sections Header, Home, About, Favourite, Model, Sponsor & Footer ). And Responsive Too. - (By Elite Coders)
+JBL Website Design Using HTML CSS & JavaScript,Gsap (Contains the sections Header, Home, About, Favourite, Model, Sponsor & Footer ). And Responsive Too. - (By Elite Coders)
 
 <b>Team Members : </b><br>
 1.Sahil Bhandare<br>
