@@ -1,4 +1,3 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
 
@@ -6,7 +5,7 @@
   --header-height: 3.5rem;
 
 
- 
+
   --first-color: hsl(23, 100%, 50%);
   --gradient-color: linear-gradient(90deg,
       hsl(23, 4%, 28%) 0%,
@@ -60,12 +59,35 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
 }
 
+#loading{
+width: 100%;
+height: 100vh;
+position: fixed;
+z-index: 9999;
+background:black;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#minicircle{
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  z-index: 9999;
+  border-radius: 50%;
+  filter: blur(5px);
+  background-color:hsl(23, 100%, 50%) ; 
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  
+}
 h1,
 h2,
 h3,
@@ -111,7 +133,7 @@ img {
 
 .main {
   overflow: hidden;
-  
+
 }
 
 
@@ -223,6 +245,7 @@ img {
 
 .home__img {
   width: 220px;
+  position: relative;
 }
 
 .home__title {
@@ -309,6 +332,32 @@ img {
 }
 
 
+
+#page2 {
+  width: 100%;
+  height: 20%;
+  margin: 0;
+  padding-left:6vw;
+}
+
+#page2 h2 {
+  font-size: 30vw;
+  font-weight: 900;
+  font-family: 'Poppins';
+  margin-right: 20px;
+  /* transform: translateX(-180%); */
+  white-space: nowrap;
+  color: transparent;
+  -webkit-text-stroke: 4px hsl(23, 100%, 50%);
+}
+
+#page2 h2:hover {
+  color: hsl(23, 100%, 50%);
+  -webkit-text-stroke: 2px hsl(23, 100%, 50%);
+}
+
+
+
 .button {
   background: var(--gradient-color);
   padding: 0.75rem 1.5rem;
@@ -335,6 +384,8 @@ img {
 
 .about__container {
   row-gap: 3.5rem;
+  margin-top: -90px;
+  height: 100vh;  
 }
 
 .about__data {

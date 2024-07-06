@@ -5,23 +5,29 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-   
+
    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 
-   
+
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
 
-   
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+
    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
 
-   
+
    <link rel="stylesheet" href="assets/css/styles.css">
 
    <title>JBL</title>
 </head>
 
-<body>
-   
+<body onload="loader()">
+ <div id="loading">
+   <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script><dotlottie-player src="https://lottie.host/af7bdb6d-d7b9-45e3-a6ff-8a030b6c5986/1YTJUTwfWb.json" background="transparent" speed="2" style="width: 300px; height: 300px" direction="1" playMode="normal" loop autoplay></dotlottie-player>
+ </div>
+
+   <div id="minicircle" style="display: none;"></div>
+
    <header class="header" id="header">
       <nav class="nav container">
          <a href="#" class="nav__logo">JBL</a>
@@ -53,22 +59,18 @@
       </nav>
    </header>
 
-   
+
    <main class="main">
-      
       <section class="home section" id="home">
          <div class="home__container container grid">
             <div class="home__content">
+               <img src="assets/jbl_tune_560bt_headphones.glb" alt="">
                <img src="./assets/img/home-img.png" alt="home" class="home__img">
                <h1 class="home__title">
                   <span>J</span>
                   <span>B</span>
                   <span>L</span>
                </h1>
-               <div class="home__tooltip">
-                  <img src="./assets/img/tooltip-right.svg" alt="tooltip" class="home__tooltip-img">
-                  <span class="home__tooltip-text">₹6,499</span>
-               </div>
             </div>
 
             <a href="#" class="home__button button">
@@ -92,7 +94,10 @@
          </div>
       </section>
 
-      
+      <div id="page2">
+         <h2>DARE TO LISTEN</h2>
+      </div>
+
       <section class="about section" id="about">
          <div class="about__container container grid">
             <div class="about__data">
@@ -110,7 +115,7 @@
          </div>
       </section>
 
-      
+
       <section class="favorite section" id="favorites">
          <h2 class="section__title">CHOOSE YOUR FAVOURITE</h2>
          <div class="favorite__container">
@@ -137,7 +142,7 @@
          </div>
       </section>
 
-     
+
       <section class="model section" id="models">
          <h2 class="section__title">
             MODEL SPECIFICATIONS
@@ -170,7 +175,7 @@
          </div>
       </section>
 
-      
+
       <section class="sponsor section">
          <div class="sponsor__container container grid">
             <img src="./assets/img/sponsor-1.png" alt="sponsor" class="sponsor__img">
@@ -181,7 +186,7 @@
       </section>
    </main>
 
-   
+
    <footer class="footer">
       <div class="footer__container container grid">
          <div>
@@ -254,19 +259,28 @@
       </span>
    </footer>
 
-   
+
    <a href="#" class="scrollup" id="scroll-up">
       <i class="ri-arrow-up-s-line"></i>
    </a>
-
    
+   <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
    <script src="./assets/js/scrollreveal.min.js"></script>
 
-   
+
    <script src="./assets/js/swiper-bundle.min.js"></script>
 
-   
+
    <script src="assets/js/main.js"></script>
+   
 </body>
 
 </html>
